@@ -25,8 +25,9 @@ body {
 
 .header {
 	text-align: center;
-	font-size: 22pt;
+	font-size: calc(14pt + 1.5vw);
 	margin: 0 auto;
+	margin-top: 5px;
 	background: var(--bg);
 	color: var(--fontColor);
 }
@@ -37,14 +38,14 @@ a {
 
 .description {
 	text-align: center;
-	font-size: 12pt;
+	font-size: calc(10pt + 0.5vw);
 	margin: 0 auto;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 .credit {
 	text-align: center;
-	font-size: 10pt;
+	font-size: calc(6pt + 0.5vw);
 	margin: 0 auto;
 	margin-top: 5px;
 }
@@ -53,11 +54,11 @@ a {
 	display: table;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .specifyPinyin {
-	margin-top: 5px;
+	margin-top: 15px;
 	background-color: var(--fieldColor);
 }
 
@@ -66,7 +67,7 @@ a {
 	border-color: var(--toneBorder);
     margin-left: auto;
     margin-right: auto;
-	margin-top: 40px;
+	margin-top: 20px;
 	display: table;
 	background-color: var(--toneBg);
 }
@@ -84,7 +85,7 @@ a {
 }
 
 .nextDiv{
-	margin-top: 30px;
+	margin-top: 15px;
 	border: 20px solid transparent;
 	width: 50%;
 	height: 150px;
@@ -92,7 +93,7 @@ a {
 }
 
 .currentDiv{
-	margin-top: 30px;
+	margin-top: 15px;
 	border: 20px solid transparent;
  	width: 50%;
 	height: 150px;
@@ -166,11 +167,14 @@ a {
    
    .nextDiv{
 		width: 70%;
+		min-width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.currentDiv{
+		margin-top: 0px;
+		min-width: 300px;
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
