@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinyin Flashcards</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+
+<h1 class="header">Pinyin Flashcards</h1>
+<p class="description">A simple web app for practicing pinyin pronunciation</p>
+<p class="credit">Audio is sourced from <a href="https://chinese.yabla.com/chinese-pinyin-chart.php">Yabla's Pinyin Audio Chart</a></p>
+
+<div class="choosePinyin">
+<input class="specifyPinyin" id="textField" type="text"/>
+<input class="specifyPinyin" type="button" onclick="submitSyllable()" value="Change">
+</div>
+
+<div class="toneButtonContainer flex-direction">
+<div class="tones">
+<input type="radio" id="allTones" name="toneSelection" value="All Tones" checked="checked">
+<label for="allTones">All Tones</label>
+</div>
+
+<div class="tones">
+<input type="radio" id="firstTone" name="toneSelection" value="First Tone">
+<label for="firstTone">First Tone</label>
+</div>
+
+<div class="tones">
+<input type="radio" id="secondTone" name="toneSelection" value="Second Tone">
+<label for="secondTone">Second Tone</label>
+</div>
+
+<div class="tones">
+<input type="radio" id="thirdTone" name="toneSelection" value="Third Tone">
+<label for="thirdTone">Third Tone</label>
+</div>
+
+<div class="tones">
+<input type="radio" id="fourthTone" name="toneSelection" value="Fourth Tone">
+<label for="fourthTone">Fourth Tone</label>
+</div>
+</div>
+
+<div class="buttonsDiv flex-direction">
+	<div class="currentDiv">
+		<input id="current-syllable" type="button" onclick="playPinyin()" value="Pinyin">
+	</div>
+	<div class="nextDiv">
+		<input id="next-syllable" type="button" onclick="change()" value="Next Syllable">
+	</div>
+</div>
+
+<div>
+<button id="light-or-dark" type="button">Dark</button>
+</div>
+
+<script src="app.js"></script>
+<noscript>You need to enable JavaScript to view the full site</noscript>
+
+</body>
+</html>
