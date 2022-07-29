@@ -1,0 +1,209 @@
+:root {
+	--gray: #d9e3f0;
+	--white: #FFFFFF;
+	--black: #000000;
+	--darkGray: #2F2F2F;
+	--buttonGray: #E9E9E9;
+	--lightGray: #AFAFAF;
+	--medGray: #666666;
+	--darkBlue: #2000FF;
+	--lightBlue: #44BBFF;
+	--shadowGray: #8F8F8F;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fontColor);
+	font-family: monospace;
+}
+
+.header {
+	text-align: center;
+	font-size: calc(14pt + 1.5vw);
+	margin: 0 auto;
+	margin-top: 5px;
+	background: var(--bg);
+	color: var(--fontColor);
+}
+
+a {
+	color: var(--linkColor);
+}
+
+.homeLink {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: calc(8pt + 0.5vw);
+}
+
+.description {
+	text-align: center;
+	font-size: calc(10pt + 0.5vw);
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.credit {
+	text-align: center;
+	font-size: calc(6pt + 0.5vw);
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.choosePinyin {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+.specifyPinyin {
+	margin-top: 10px;
+	background-color: var(--fieldColor);
+}
+
+.toneButtonContainer {
+    border: 6px solid;
+	border-color: var(--toneBorder);
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 20px;
+	display: table;
+	background-color: var(--toneBg);
+}
+
+.tones {
+	font-size: 12pt;
+	border: 10px solid transparent;
+	float: left;
+}
+
+.buttonsDiv{
+	display: inline-flex;
+	width: 100%;
+	height: 50%;
+}
+
+.nextDiv{
+	margin-top: 15px;
+	border: 20px solid transparent;
+	width: 50%;
+	height: 150px;
+  	float: left;
+}
+
+.currentDiv{
+	margin-top: 15px;
+	border: 20px solid transparent;
+ 	width: 50%;
+	height: 150px;
+  	float: left;
+}
+
+#next-syllable {
+	font-size: 4.8vw;
+	width: 80%;
+	height: 300px;
+	box-shadow: 1.5px 2px var(--shadowColor);
+	background-color: var(--buttonColor);
+}
+
+#current-syllable {
+	font-size: 4.8vw;
+	width: 80%;
+	height: 300px;
+	box-shadow: 1.5px 2px var(--shadowColor);
+	background-color: var(--buttonColor);
+	float: right;
+}
+
+.light-theme {
+	--bg: var(--gray);
+	--fontColor: var(--black);
+	--btnBg: var(--black);
+	--btnFontColor: var(--white);
+	--toneBg: var(--lightGray);
+	--toneBorder: var(--darkGray);
+	--linkColor: var(--darkBlue);
+	--fieldColor: var(--white);
+	--buttonColor: var(--buttonGray);
+	--shadowColor: var(--shadowGray);
+}
+
+.dark-theme {
+	--bg: var(--black);
+	--fontColor: var(--gray);
+	--btnBg: var(--white);
+	--btnFontColor: var(--black);
+	--toneBg: var(--darkGray);
+	--toneBorder: var(--medGray);
+	--linkColor: var(--lightBlue);
+	--fieldColor: var(--gray);
+	--buttonColor: var(--lightGray);
+	--shadowColor: var(--darkGray);
+}
+
+#light-or-dark {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: none;
+	color: var(--btnFontColor);
+	background-color: var(--btnBg);
+}
+
+@media screen and (max-width: 1000px) {
+	
+	.flex-direction {
+   		flex-direction: column;	
+    }
+	
+	.tones {
+		float: none;
+		border: 6px solid transparent;
+	}
+   
+   .nextDiv{
+		width: 70%;
+		min-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		border: 20px solid transparent;
+	}
+
+	.currentDiv{
+		margin-top: 0px;
+		min-width: 300px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 20px solid transparent;
+	}
+	
+	#next-syllable {
+		height: 130px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#current-syllable {
+		height: 130px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+	}	
+}
+

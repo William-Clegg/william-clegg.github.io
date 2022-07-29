@@ -25,96 +25,13 @@ body {
 
 .header {
 	text-align: center;
-	font-size: calc(14pt + 1.5vw);
-	margin: 0 auto;
-	margin-top: 5px;
-	background: var(--bg);
-	color: var(--fontColor);
 }
 
-a {
-	color: var(--linkColor);
-}
-
-.description {
-	text-align: center;
-	font-size: calc(10pt + 0.5vw);
-	margin: 0 auto;
-	margin-top: 15px;
-}
-
-.credit {
-	text-align: center;
-	font-size: calc(6pt + 0.5vw);
-	margin: 0 auto;
-	margin-top: 5px;
-}
-
-.choosePinyin {
-	display: table;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 15px;
-}
-
-.specifyPinyin {
-	margin-top: 15px;
-	background-color: var(--fieldColor);
-}
-
-.toneButtonContainer {
-    border: 6px solid;
-	border-color: var(--toneBorder);
-    margin-left: auto;
-    margin-right: auto;
-	margin-top: 20px;
-	display: table;
-	background-color: var(--toneBg);
-}
-
-.tones {
-	font-size: 12pt;
-	border: 10px solid transparent;
-	float: left;
-}
-
-.buttonsDiv{
-	display: inline-flex;
-	width: 100%;
-	height: 50%;
-}
-
-.nextDiv{
-	margin-top: 15px;
-	border: 20px solid transparent;
-	width: 50%;
-	height: 150px;
-  	float: left;
-}
-
-.currentDiv{
-	margin-top: 15px;
-	border: 20px solid transparent;
- 	width: 50%;
-	height: 150px;
-  	float: left;
-}
-
-#next-syllable {
-	font-size: 4.8vw;
-	width: 80%;
-	height: 300px;
-	box-shadow: 1.5px 2px var(--shadowColor);
-	background-color: var(--buttonColor);
-}
-
-#current-syllable {
-	font-size: 4.8vw;
-	width: 80%;
-	height: 300px;
-	box-shadow: 1.5px 2px var(--shadowColor);
-	background-color: var(--buttonColor);
-	float: right;
+.PinyinFlashcardsLink {
+	position: relative;
+	top: 20px;
+	left: 50px;
+	font-size: 18pt;
 }
 
 .light-theme {
@@ -157,42 +74,6 @@ a {
 
 @media screen and (max-width: 1000px) {
 	
-	.flex-direction {
-   		flex-direction: column;	
-    }
-	
-	.tones {
-		float: none;
-	}
-   
-   .nextDiv{
-		width: 70%;
-		min-width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
-	.currentDiv{
-		margin-top: 0px;
-		min-width: 300px;
-		width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	#next-syllable {
-		height: 150px;
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	#current-syllable {
-		height: 150px;
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		float: none;
-	}	
 }
 
