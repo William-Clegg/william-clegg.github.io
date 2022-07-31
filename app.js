@@ -440,6 +440,12 @@ switcher.addEventListener('click', function() {
 	}
 });
 
+document.getElementById('textField').onkeydown = function(event) {
+    if (event.keyCode == 13) {
+        submitSyllable();
+    }
+}
+
 function submitSyllable() {
 	var str = document.getElementById("textField").value;
 	

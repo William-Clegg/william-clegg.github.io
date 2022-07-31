@@ -108,7 +108,7 @@ a {
 }
 
 #next-syllable {
-	font-size: 4.8vw;
+	font-size: calc(12pt + 3.8vw);
 	width: 80%;
 	height: 300px;
 	box-shadow: 1.5px 2px var(--shadowColor);
@@ -116,7 +116,7 @@ a {
 }
 
 #current-syllable {
-	font-size: 4.8vw;
+	font-size: calc(12pt + 3.8vw);
 	width: 80%;
 	height: 300px;
 	box-shadow: 1.5px 2px var(--shadowColor);
