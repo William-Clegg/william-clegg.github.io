@@ -424,9 +424,9 @@ const syllables = [ "a",
 	"zuo",
 	"zu"];
 
-const switcher = document.querySelector('#light-or-dark');
-
 let currentTone = 1;
+
+const switcher = document.querySelector('#light-or-dark');
 
 switcher.addEventListener('click', function() {
 	document.body.classList.toggle('light-theme');
@@ -447,7 +447,8 @@ document.getElementById('textField').onkeydown = function(event) {
 }
 
 function submitSyllable() {
-	var str = document.getElementById("textField").value;
+	var str = document.getElementById("textField").value.toLowerCase();
+	
 	
 	if(syllables.includes(str)) {
 		change(str);

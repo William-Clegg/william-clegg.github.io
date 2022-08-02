@@ -9,6 +9,8 @@
 	--darkBlue: #2000FF;
 	--lightBlue: #44BBFF;
 	--shadowGray: #8F8F8F;
+	--darkBlue: #2c78a3;
+	--medBlue: #5396bd;
 }
 
 * {
@@ -43,7 +45,7 @@ body {
 }
 
 .topnav a.active {
-	background-color: #04AA6D;
+	background-color: var(--activeColor);
 	color: white;
 }
 
@@ -73,6 +75,7 @@ body {
 	--fieldColor: var(--white);
 	--buttonColor: var(--buttonGray);
 	--shadowColor: var(--shadowGray);
+	--activeColor: var(--darkBlue);
 }
 
 .dark-theme {
@@ -86,12 +89,13 @@ body {
 	--fieldColor: var(--gray);
 	--buttonColor: var(--lightGray);
 	--shadowColor: var(--darkGray);
+	--activeColor: var(--medBlue);
 }
 
 #light-or-dark {
 	position: absolute;
-	top: 70px;
-	right: 10px;
+	top: 62px;
+	right: 11px;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
