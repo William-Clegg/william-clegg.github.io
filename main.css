@@ -11,6 +11,7 @@
 	--shadowGray: #8F8F8F;
 	--darkBlue: #2c78a3;
 	--medBlue: #5396bd;
+	--activeBlue: #336e8f;
 	--hoverGray: #dddddd;
 }
 
@@ -77,7 +78,7 @@ body {
 	--fieldColor: var(--white);
 	--buttonColor: var(--buttonGray);
 	--shadowColor: var(--shadowGray);
-	--activeColor: var(--darkBlue);
+	--activeColor: var(--activeBlue);
 	--hoverColor: var(--hoverGray);
 }
 
@@ -92,7 +93,7 @@ body {
 	--fieldColor: var(--gray);
 	--buttonColor: var(--lightGray);
 	--shadowColor: var(--darkGray);
-	--activeColor: var(--medBlue);
+	--activeColor: var(--activeBlue);
 	--hoverColor: var(--hoverGray);
 }
 
