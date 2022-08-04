@@ -6,11 +6,12 @@
 	--buttonGray: #E9E9E9;
 	--lightGray: #AFAFAF;
 	--medGray: #666666;
-	--darkBlue: #2000FF;
+	--linkBlue: #2000FF;
 	--lightBlue: #44BBFF;
 	--shadowGray: #8F8F8F;
 	--darkBlue: #2c78a3;
 	--medBlue: #5396bd;
+	--hoverGray: #dddddd;
 }
 
 * {
@@ -20,6 +21,7 @@
 }
 
 body {
+	margin: 0px;
 	background: var(--bg);
 	color: var(--fontColor);
 	font-family: monospace;
@@ -40,7 +42,7 @@ body {
 }
 
 .topnav a:hover {
-	background-color: #ddd;
+	background-color: var(--hoverColor);
 	color: var(--fontColor);
 }
 
@@ -76,6 +78,7 @@ body {
 	--buttonColor: var(--buttonGray);
 	--shadowColor: var(--shadowGray);
 	--activeColor: var(--darkBlue);
+	--hoverColor: var(--hoverGray);
 }
 
 .dark-theme {
@@ -85,17 +88,18 @@ body {
 	--btnFontColor: var(--black);
 	--toneBg: var(--darkGray);
 	--toneBorder: var(--medGray);
-	--linkColor: var(--lightBlue);
+	--linkColor: var(--medBlue);
 	--fieldColor: var(--gray);
 	--buttonColor: var(--lightGray);
 	--shadowColor: var(--darkGray);
 	--activeColor: var(--medBlue);
+	--hoverColor: var(--hoverGray);
 }
 
 #light-or-dark {
 	position: absolute;
-	top: 62px;
-	right: 11px;
+	top: 56px;
+	right: 10px;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;

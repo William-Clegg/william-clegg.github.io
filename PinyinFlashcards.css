@@ -6,9 +6,12 @@
 	--buttonGray: #E9E9E9;
 	--lightGray: #AFAFAF;
 	--medGray: #666666;
-	--darkBlue: #2000FF;
+	--linkBlue: #2000FF;
 	--lightBlue: #44BBFF;
 	--shadowGray: #8F8F8F;
+	--darkBlue: #2c78a3;
+	--medBlue: #5396bd;
+	--hoverGray: #dddddd;
 }
 
 * {
@@ -18,6 +21,7 @@
 }
 
 body {
+	margin: 0px;
 	background: var(--bg);
 	color: var(--fontColor);
 	font-family: monospace;
@@ -38,12 +42,12 @@ body {
 }
 
 .topnav a:hover {
-	background-color: #ddd;
+	background-color: var(--hoverColor);
 	color: var(--fontColor);
 }
 
 .topnav a.active {
-	background-color: #04AA6D;
+	background-color: var(--activeColor);
 	color: white;
 }
 
@@ -51,13 +55,18 @@ body {
 	display: none;
 }
 
+.head {
+	position: relative;
+}
+
 .header {
 	text-align: center;
-	font-size: calc(14pt + 1.5vw);
+	font-size: calc(12pt + 1.6vw);
 	margin: 0 auto;
 	margin-top: 5px;
 	background: var(--bg);
 	color: var(--fontColor);
+	display: block;
 }
 
 a {
@@ -152,10 +161,12 @@ a {
 	--btnFontColor: var(--white);
 	--toneBg: var(--lightGray);
 	--toneBorder: var(--darkGray);
-	--linkColor: var(--darkBlue);
+	--linkColor: var(--linkBlue);
 	--fieldColor: var(--white);
 	--buttonColor: var(--buttonGray);
 	--shadowColor: var(--shadowGray);
+	--activeColor: var(--darkBlue);
+	--hoverColor: var(--hoverGray);
 }
 
 .dark-theme {
@@ -165,16 +176,19 @@ a {
 	--btnFontColor: var(--black);
 	--toneBg: var(--darkGray);
 	--toneBorder: var(--medGray);
-	--linkColor: var(--lightBlue);
+	--linkColor: var(--medBlue);
 	--fieldColor: var(--gray);
 	--buttonColor: var(--lightGray);
 	--shadowColor: var(--darkGray);
+	--activeColor: var(--medBlue);
+	--hoverColor: var(--hoverGray);
 }
 
 #light-or-dark {
 	position: absolute;
-	top: 62px;
-	right: 11px;
+	top: 0px;
+	float: right;
+	right: 5px;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;

@@ -13,12 +13,16 @@
 <div class="topnav" id="myTopnav">
 	<a href="index.html">Home</a>
 	<a href="PinyinFlashcards.html" class="active">Pinyin Flashcards</a>
-	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<a href="javascript:void(0);" class="icon" onclick="showTopnavMenu()">
 		<i class="fa fa-bars"></i>
 	</a>
 </div>
 
+<div class="head">
 <h1 class="header">Pinyin Flashcards</h1>
+<button id="light-or-dark" type="button">Dark</button>
+</div>
+
 <p class="description">A simple web app for practicing pinyin pronunciation</p>
 <p class="credit">Audio is sourced from <a href="https://chinese.yabla.com/chinese-pinyin-chart.php">Yabla's Pinyin Audio Chart</a></p>
 
@@ -61,10 +65,6 @@
 	<div class="nextDiv">
 		<input id="next-syllable" type="button" onclick="change()" value="Next Syllable">
 	</div>
-</div>
-
-<div>
-<button id="light-or-dark" type="button">Dark</button>
 </div>
 
 <script src="PinyinFlashcards.js"></script>

@@ -42,7 +42,6 @@ const syllables = [ "a",
 	"cang",
 	"cao",
 	"ce",
-	"cei",
 	"cen",
 	"ceng",
 	"cha",
@@ -95,7 +94,6 @@ const syllables = [ "a",
 	"dun",
 	"duo",
 	"e",
-	"ei",
 	"en",
 	"er",
 	"fa",
@@ -540,7 +538,7 @@ document.getElementById('fourthTone').addEventListener("click", function() {
 	change(removeTones(document.getElementById('current-syllable').value));
 });
 
-function myFunction() {
+function showTopnavMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
